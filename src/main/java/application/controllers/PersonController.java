@@ -25,7 +25,7 @@ public class PersonController {
     @PostMapping(value = "/add", consumes = "application/json", produces = "application/json")
     void addPerson(@RequestBody Person person) {
         personRepository.save(person);
-        // { "firstName": "Gopi","lastName": "Mullapudi" }
+        // { "firstName": "Gopi", "lastName": "Mullapudi" }
     }
 
 }
