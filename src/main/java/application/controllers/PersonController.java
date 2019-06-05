@@ -22,7 +22,7 @@ public class PersonController {
         return (List<Person>) personRepository.findAll();
     }
 
-    @PostMapping(value="/add",consumes = "application/json", produces = "application/json")
+    @PostMapping(value = "/add", consumes = "application/json", produces = "application/json")
     void addPerson(@RequestBody Person person) {
         personRepository.save(person);
         // { "firstName": "Gopi","lastName": "Mullapudi" }
