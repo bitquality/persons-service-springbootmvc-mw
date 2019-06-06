@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import application.repositories.PersonRepository;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4301","https://persons-app-middleware.herokuapp.com"})
+@CrossOrigin
 @RequestMapping("/api/persons/v1")
 public class PersonController {
 
